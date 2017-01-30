@@ -66,7 +66,7 @@ def get_all_data(self):
 @app.route('/')
 def index():
     template = JINJA_ENVIRONMENT.get_template('templates/index.html')
-    get_all_data(self)
+    get_all_data()
     return template.render()
 
 
