@@ -16,7 +16,7 @@ JINJA_ENVIRONMENT = jinja2.Environment(
     
 
 API_KEY = 'AIzaSyCGuXGzRCwV8WaFIP--NvSgEir2DkZ6teI'
-TABLE_ID = '1JobEuJSRuLuxxXgMXrVOdgPA7K9FMJVdOYZ3SgQ'
+TABLE_ID = 'AIzaSyCGuXGzRCwV8WaFIP--NvSgEir2DkZ6teI'
 
 # This uses discovery to create an object that can talk to the 
 # fusion tables API using the developer key
