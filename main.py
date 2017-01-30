@@ -58,7 +58,6 @@ def make_query(cols, countries, limit):
 	return query
 
 
-@app.route('/')
 def get_all_data(self):
     query = "SELECT * FROM " + TABLE_ID + " WHERE  Country = 'China' LIMIT 2"
     response = service.query().sql(sql=query).execute()
@@ -68,12 +67,23 @@ def get_all_data(self):
     return response
 
 
+@app.route('/')
+def index():
+    template = JINJA_ENVIRONMENT.get_template('templates/index.html')
+    get_all_data(self)
+    return template.render()
+#    request = service.column().list(tableId = TABLE_ID)
+#    allheaders = get_all_data(make_query([], query_countries, 1))
+#    logging.info('allheaders')
+#    return template.render(allheaders = allheaders['columns'])
+
+
 #@app.route('/')
 #def index():
 #    template = JINJA_ENVIRONMENT.get_template('templates/index.html')
 #    request = service.column().list(tableId = TABLE_ID)
 #    allheaders = get_all_data(make_query([], query_countries, 1))
-#    logging.info('allheaders') #what is logging.info?
+#    logging.info('allheaders')
 #    return template.render(allheaders = allheaders['columns'])
 
 
