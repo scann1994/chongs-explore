@@ -70,7 +70,7 @@ def get_all_data(self):
 @app.route('/')
 def index():
     template = JINJA_ENVIRONMENT.get_template('templates/index.html')
-    get_all_data(self)
+    get_all_data()
     return template.render()
 #    request = service.column().list(tableId = TABLE_ID)
 #    allheaders = get_all_data(make_query([], query_countries, 1))
