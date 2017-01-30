@@ -28,10 +28,6 @@ from flask import Flask
 app = Flask(__name__)
 app.config['DEBUG'] = True
 
-def get_all_data(query):
-	#request = service.table().get(tableId=TABLE_ID) 
-	response = service.query().sql(sql=query).execute()
-	return response
 
 # Default columns for the query
 query_cols = []
