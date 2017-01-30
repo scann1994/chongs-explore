@@ -14,6 +14,7 @@ JINJA_ENVIRONMENT = jinja2.Environment(
     extensions=['jinja2.ext.autoescape'],
     autoescape=True)
     
+
 API_KEY = 'AIzaSyAuLSYsTH7R8qWEYmVu0F5EjC_6WmCPV_0'
 TABLE_ID = '1JobEuJSRuLuxxXgMXrVOdgPA7K9FMJVdOYZ3SgQ'
 
